@@ -1,0 +1,311 @@
+/*************************** Сброс стилей *****************************/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {content:'';}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/*#6bba7c*/
+/************************* Общие стили ***************************/
+
+body, html {padding: 0;margin: 0; height: 100%}
+body {
+    background-image: url(bg.png);
+    background-color: #000;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+h1 {font-size: 24px;}
+h2 {font-size: 22px;}
+h3 {font-size: 20px;}
+h4, h5, h6 {font-size: 18px;}
+
+a {color: #fff}
+a:hover {color: #fff}
+
+header, footer, main {
+    width: 100%;
+}
+
+
+.logofont {
+  font-size: 36px;
+
+  color: #fff;  
+}
+.logofont:hover {
+    color: #FF6600;
+    
+    transition: .5s;
+}
+
+header {
+    padding: 40px 0 40px;
+    display: flex;
+    flex-grow: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul li, footer ul li {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+header ul a, footer ul a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: .2s;
+}
+header ul a:hover, header ul a.active, footer ul a:hover, footer ul a.active {
+    color: #66CCFF;
+    border-bottom: 2px solid #FF6600;
+    transition: .2s;
+}
+header nav#language {
+    margin: 0 0 10px 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+header nav#language ul li {
+    background: #FF6600;
+    color: #000;
+    padding: 6px 6px;
+    border-radius: 20%;
+    transition: .2s;
+    font-size: 10px;
+}
+header nav#language ul li:hover, header nav#language ul li.active {background: #66CCFF; transition: .2s;}
+header nav#language ul li a {color: #000; border-bottom: none;}
+
+main {
+    flex-grow: 1;
+    line-height: 1.8;
+}
+footer {
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    border-top: 1px solid #FF6600;
+}
+small, small a {
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FF6600;
+    text-decoration: none;
+}
+main h1, main h2, main h3, main h4 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #FF6600;
+    margin: 0 0 20px 0;
+}
+main h1 {
+    text-align: center;
+    margin: 30px 0 50px;
+}
+.page-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.scrolltop {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20%;
+    background: rgba(0,0,0,.75);
+    opacity: .75;
+    cursor: pointer;
+    transition: .3s;
+
+}
+.scrolltop:hover {
+    opacity: 1;
+    transition: .3s;
+}
+.scrolltop:after {
+    content: "\2B06";
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #FF6600;
+}
+
+
+/************************* Страница таблиц ***************************/
+.table-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+
+
+
+table {
+    background: #66CCFF;
+    border-collapse: collapse;
+    font-size: 0.78em;
+    line-height: 24px;
+    margin: 10px auto;
+    text-align: center;
+    width: 600px;
+    
+}   
+
+td {
+    border: 0px solid #fff;
+    padding: 15px 15px;
+    position: relative;
+    transition: all 300ms;
+    border-top: 1px solid #FF6600;
+}
+
+table th {
+    border: 0px solid #fff;
+    padding: 0px ;
+    position: relative;
+    transition: all 300ms;
+    border-top: 1px solid #FF6600;
+    text-align: center;
+}
+
+tr {
+    
+    cursor: pointer;
+}
+
+caption {
+    background-color: #FF6600;
+
+}
+
+
+
+
+
+/************************* Страница категории ***************************/
+.diary {
+    margin: 20px auto 10px;
+    background: #6bba7c;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 4px 10px;
+    transition: .2s;
+    cursor: pointer;
+    display: table;
+}
+.diary:hover {
+    background: black;
+    transition: .2s;
+}
+
+
+
+/************************* Мобильные стили ***************************/
+
+@media (max-width: 800px) {
+
+    header {
+        display: block;
+        padding: 10px 0 0 0;
+    }
+    header nav#language {
+        margin: 20px 0 10px;
+        flex-direction: row;
+    }
+    header ul li {
+        margin: 0 20px 20px 0;
+    }
+    main h1 {
+        margin: 20px 0 30px;
+    }
+   
+}
+
+@media (max-width: 600px) {
+
+    .scrolltop {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    table {
+    
+    width: 300px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    table {
+    
+    width: 300px;
+    }
+}
+
